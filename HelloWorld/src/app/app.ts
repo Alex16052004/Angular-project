@@ -16,9 +16,11 @@ import { Demo } from './demo/demo';
 import { Pipes } from './pipes/pipes';
 import { FormsModule } from '@angular/forms';
 import { Myservice } from './myservice';
+import { EmployeeDetails } from './employee-details/employee-details';
+import { EmployeeList } from './employee-list/employee-list';
 @Component({
   selector: 'app-root',
-  imports: [
+  imports: [ 
     RouterOutlet,
     Register,
     CommonModule,
@@ -34,7 +36,9 @@ import { Myservice } from './myservice';
     ForDirective,
     Demo,
     Pipes,
-    FormsModule
+    FormsModule,
+    EmployeeDetails,
+    EmployeeList
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
