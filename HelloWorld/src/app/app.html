@@ -1,0 +1,50 @@
+<h1 style="text-align: center">Data Bindings</h1>
+
+<div class="box">
+  <app-interpolation class="item"></app-interpolation>
+  <app-property class="item"></app-property>
+  <app-class-binding class="item"></app-class-binding>
+</div>
+
+<div>
+  <app-stylebinding class="item1"></app-stylebinding>
+</div>
+
+<div>
+  <app-eventbinding class="item2"></app-eventbinding>
+</div>
+
+<div>
+  <app-two-way-binding class="item2"></app-two-way-binding>
+</div>
+
+<div>
+  <app-switch class="item3"></app-switch>
+</div>
+
+<div>
+  <app-form class="item4"></app-form>
+</div>
+
+<div>
+  <app-for-directive class="item5"></app-for-directive>
+</div>
+
+<div>
+  <app-demo [message]="name"></app-demo>
+</div>
+
+<div>
+  <app-demo [message]="name" (messageEvent)="receiveMessage($event)">
+    {{childmsg}}
+  </app-demo>
+</div>
+<div>
+  <input type="text" [(ngModel)]="name" />
+</div>
+
+<div>
+  <app-pipes class="item6"></app-pipes>
+</div>
+
+<router-outlet />

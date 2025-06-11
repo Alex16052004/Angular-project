@@ -1,0 +1,14 @@
+<h2>Class Binding</h2>
+<h3 [class]="statusClass">Simple Class Binding</h3>
+
+<p [class.text-success]="isSuccess">This text shows success</p>
+
+<p
+  [ngClass]="{
+  'text-success': isSuccess,
+  'text-error': isError,
+  'text-italic': isItalic
+}"
+>
+  Multiple conditional classes here
+</p>

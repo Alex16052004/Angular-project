@@ -1,0 +1,34 @@
+.text-blue {
+  color: blue;
+}
+
+.active {
+  font-weight: bold;
+  color: red;
+}
+.highlight {
+  font-weight: bold;
+  color: green;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: auto;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 20px;
+}

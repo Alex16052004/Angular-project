@@ -1,0 +1,20 @@
+<h2>style-binding</h2>
+
+<div [style.backgroundColor]="'red'">This has red background</div>
+
+<div [style.width.px]="100">Fixed width of 100px</div>
+
+<div [style.width.px]="fontSize * 10">Dynamic Width</div>
+
+<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding</h2>
+
+<div [ngStyle]="{'background-color':bgColor, 'font-size.px': fontSize}">Styled dynamically</div>
+
+<p appHighlightDirective>Pankaj's Number</p>
+
+<p appHighlightDirective>8839381991</p>
+
+<div *ngIf="isLoggedIn; else loginBlock">Welcome, user!</div>
+<ng-template #loginBlock>
+    <div>Please log in.</div>
+</ng-template>

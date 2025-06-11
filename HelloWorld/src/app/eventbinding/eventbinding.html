@@ -1,0 +1,10 @@
+<p>{{click}}</p>
+
+<button type="button" (click)="clickButton()">click</button>
+
+<input (input)="onInput($event)" />
+
+<p>{{text}}</p>
+<input (input)="onInput($event)" (text)="onInput($event)" />
+
+<button (click)="addToCart(product)">Add</button>
