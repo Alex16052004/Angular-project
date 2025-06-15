@@ -15,9 +15,12 @@ import { ForDirective } from './for-directive/for-directive';
 import { Demo } from './demo/demo';
 import { Pipes } from './pipes/pipes';
 import { FormsModule } from '@angular/forms';
-import { Myservice } from './myservice';
 import { EmployeeDetails } from './employee-details/employee-details';
 import { EmployeeList } from './employee-list/employee-list';
+import { Dashboard } from './dashboard/dashboard';
+import { AddProduct } from './add-product/add-product';
+
+
 @Component({
   selector: 'app-root',
   imports: [ 
@@ -38,7 +41,9 @@ import { EmployeeList } from './employee-list/employee-list';
     Pipes,
     FormsModule,
     EmployeeDetails,
-    EmployeeList
+    EmployeeList,
+    Dashboard,
+    AddProduct
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

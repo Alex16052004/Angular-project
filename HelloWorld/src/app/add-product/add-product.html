@@ -1,0 +1,35 @@
+<form name="form" #signupForm="ngForm" (ngSubmit)="signupForm.form.valid && onSubmit()" >
+    <div class="form-group">
+        <label for="">id</label>
+        <input type="text" class="form-control" [(ngModel)]="signupModel.Id" name="id" #id="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && id.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">title</label>
+        <input type="text" class="form-control" [(ngModel)]="signupModel.Title" name="title" #title="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && title.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">discription</label>
+        <input type="text" class="form-control" [(ngModel)]="signupModel.Discription" name="discription" #discription="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && discription.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">price</label>
+        <input type="number" class="form-control"[(ngModel)]="signupModel.Price" name="price" #price="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && price.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">category</label>
+        <input type="text" class="form-control" [(ngModel)]="signupModel.Category" name="category" #category="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && category.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <label for="">image</label>
+        <input type="text" class="form-control" [(ngModel)]="signupModel.Image" name="image" #image="ngModel" [ngClass]="{ 'is-invalid': signupForm.submitted && image.invalid }" required>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
